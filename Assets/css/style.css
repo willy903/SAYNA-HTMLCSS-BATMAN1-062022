@@ -120,7 +120,16 @@ body {
 .boite-bat>.item-bat>.card {
     margin: 20px;
     height: 360px;
-    background-color: #000;
+    background-color: rgb(40, 13, 160);
+    transition: transform .1s;
+}
+
+.boite-bat>.item-bat>.card:hover {
+    -ms-transform: scale(1.4);
+    /* IE 9 */
+    -webkit-transform: scale(0.4);
+    /* Safari 3-8 */
+    transform: scale(1.4);
 }
 
 .container {
@@ -179,8 +188,12 @@ body {
 
 .slide2 {
     background-color: rgb(0, 156, 39);
+    visibility: hidden;
+    opacity: 0;
 }
 
 .slide3 {
     background-color: rgb(255, 0, 179);
+    opacity: 0;
+    visibility: hidden;
 }
