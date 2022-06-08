@@ -18,5 +18,3 @@ prv.addEventListener("click", () => {
     console.log(currentShownIndex)
     allSlides[(currentShownIndex + 1) % allSlides.length].classList.add("slide-shown")
 })
-
-// setInterval(slid_next, time);
