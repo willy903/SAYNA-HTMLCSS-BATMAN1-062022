@@ -104,27 +104,27 @@ body {
     background-color: rgb(168, 53, 53);
     margin: 0 auto;
     justify-content: center;
+    flex-wrap: wrap;
     width: 90%;
 }
 
 .boite-bat>.item-bat {
     margin: 30px;
     background-color: rgb(255, 0, 149);
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 600px;
 }
 
 
 /* j'utilise 2 boites pour premier boite c'est les zoom que je veux faire après pour les element de coté ne bouge pas quant je fais zoom après */
 
-.boite-bat>.item-bat>.card {
-    margin: 20px;
-    height: 360px;
+.boite-bat>.item-bat {
+    margin: 10px;
     background-color: rgb(40, 13, 160);
     transition: transform .1s;
 }
 
-.boite-bat>.item-bat>.card:hover {
+.boite-bat>.item-bat>img:hover {
     -ms-transform: scale(1.4);
     /* IE 9 */
     -webkit-transform: scale(0.4);
@@ -264,11 +264,10 @@ body {
 .newsletter {
     position: relative;
     top: 3200px;
-    background-color: #fff;
+    background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
 }
 
 .news-bloc {
-    background-color: red;
     width: 60%;
     margin: 0 auto;
     padding: 30px;
@@ -276,10 +275,12 @@ body {
 
 form>label {
     display: block;
+    margin-top: 15px;
 }
 
 .label2 {
     width: 450px;
+    margin-top: 15px;
 }
 
 form>input {
@@ -289,6 +290,63 @@ form>input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
+    outline: none;
+    margin-top: 15px;
+}
+
+.btn-groupe {
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-groupe>button {
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    border-image: linear-gradient(160deg, hsl(0, 0%, 60%), hsl(198, 80%, 28%)) 1;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+textarea {
+    padding-top: 6px;
+    width: 99%;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    color: #f1f1f1;
+}
+
+form>h1 {
+    text-align: center;
+}
+
+form>h3 {
+    margin-top: 25px;
+}
+
+form>p {
+    margin-top: 20px;
+}
+
+.bloc-confirmer {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.btn-confirmer {
+    background: linear-gradient(to right, hsl(40, 40%, 84%), hsl(356, 60%, 40%));
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    border: none;
+    outline: none;
 }
 
 
@@ -306,7 +364,7 @@ form>input {
 
 /* The container <div> - needed to position the dropdown content */
 
-.dropdown {
+.dropdown-in {
     position: relative;
     display: inline-block;
     width: 99%;
@@ -314,12 +372,18 @@ form>input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
+    outline: none;
 }
 
 
 /* Dropdown Content (Hidden by Default) */
 
+.dropdown {
+    margin-top: 30px;
+}
+
 .dropdown-content {
+    margin-top: 20px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -357,4 +421,91 @@ form>input {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+
+/* section citation */
+
+.pied {
+    position: relative;
+    top: 3200px;
+}
+
+.bloc-citation {
+    width: 90%;
+    background-color: rgb(99, 61, 61);
+    margin: 0 auto;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sect-citation {
+    width: 50%
+}
+
+.citation {
+    width: 68%;
+    text-align: center;
+    display: block;
+}
+
+.item-citation {
+    display: flex;
+    padding: 30px;
+}
+
+.item-citation1 {
+    background-color: #3e8e41;
+}
+
+.item-citation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cit2 {
+    margin: 12px;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+}
+
+.item-citation3 {
+    justify-content: flex-end;
+    background-color: #463e8e;
+}
+
+.nav-footer {
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 50px;
+}
+
+.petit-presentation {
+    font-size: 12px;
+}
+
+.petit-presentation>img {
+    width: 20px;
+    height: 20px;
+}
+
+.bloc-icon {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bloc-icon>div {
+    margin: 12px;
+}
+
+.bloc-icon>div>img {
+    width: 20px;
+    height: 20px;
 }
