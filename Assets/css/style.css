@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+:root {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 body {
     background-image: url("../Illustrations/Bathome1.png");
     background-size: contain;
@@ -14,6 +18,20 @@ body {
 
 
 /* debut texte */
+
+h1 {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+button {
+    font-family: "Space Grotesk", sans-serif;
+    margin: 5px;
+}
 
 .entete,
 .sect-batman1 {
@@ -26,11 +44,7 @@ body {
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 20px;
-    font-size: 25px;
-}
-
-.itembat1>.bloc-p>h1 {
-    font-size: 6vw
+    font-size: 24px;
 }
 
 .entete>.container {
@@ -45,7 +59,11 @@ body {
 }
 
 .entete_item>h1 {
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.6rem;
     color: #fff;
 }
 
@@ -109,22 +127,42 @@ body {
 }
 
 .sect-batman1>.itembat1>.btn {
-    font-family: "Rajdhani";
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: "Rajdhani", sans-serif;
     font-size: 20px;
     font-weight: 400;
     width: 230px;
     height: 60px;
     margin: 12px;
+    line-height: 60px;
+}
+
+.entete_item>h1:hover,
+.entete_item>img:hover,
+.logoAside:hover {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(93%) saturate(1187%) hue-rotate(357deg) brightness(104%) contrast(105%);
 }
 
 .btn {
+    text-decoration: none;
     color: white;
     border: none;
-    background: linear-gradient(-20deg, rgba(180, 28, 28, 0.8), rgba(255, 255, 255, 0.863) 130%)
+    background: linear-gradient(-20deg, rgb(180, 28, 28), rgb(255, 240, 240) 130%);
 }
 
 .fleche {
     margin-top: 120px;
+}
+
+.logo_up_nemessis {
+    position: relative;
+    left: 14%;
+}
+
+.logo_up_nemessis>img {
+    width: 24%;
+    height: auto;
 }
 
 .batcinema {
@@ -134,8 +172,18 @@ body {
 }
 
 .batcinema>p {
+    font-size: 25px;
     text-align: justify;
-    letter-spacing: 2px;
+}
+
+.batcinema>h1 {
+    font-weight: bold;
+    padding-bottom: 20px
+}
+
+.il_st_batman {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
 }
 
 .boite-bat {
@@ -163,6 +211,10 @@ body {
 .boite-bat>.item-bat>.card>img {
     width: 100%;
     height: auto;
+}
+
+.boite-bat>.item-bat>.card>h3 {
+    font-family: "Rajdhani", sans-serif;
 }
 
 .boite-bat>.item-bat>.card:hover {
@@ -238,21 +290,27 @@ body {
 }
 
 .article>h1 {
-    font-size: 15px;
+    font-size: 19px;
+    font-weight: 500;
     margin-top: 5px;
 }
 
 .article>h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 450;
     font-size: 15px;
     margin-top: 8px;
 }
 
 .article>h3>span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
     color: #FFFF00;
 }
 
 .article>h2 {
-    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: lighter;
     font-size: 16px;
     margin-top: 4px;
 }
@@ -304,16 +362,20 @@ body {
 
 form>label {
     display: block;
+    font-family: "Space Grotesk", sans-serif;
     margin-top: 15px;
 }
 
 .label2 {
+    font-family: "Space Grotesk", sans-serif;
     width: 60%;
     margin-top: 15px;
 }
 
 form>input {
     display: block;
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
     width: 99%;
     height: 20px;
     background-color: transparent;
@@ -351,6 +413,7 @@ form>input {
 }
 
 textarea {
+    font-family: "Space Grotesk", sans-serif;
     padding-top: 6px;
     width: 99%;
     height: 20px;
@@ -362,10 +425,12 @@ textarea {
 }
 
 form>h1 {
+    font-weight: 800;
     text-align: center;
 }
 
 form>h3 {
+    font-family: "Space Grotesk", sans-serif;
     margin-top: 25px;
 }
 
@@ -421,6 +486,7 @@ form>p {
 }
 
 .dropdown-content {
+    font-family: "Space Grotesk", sans-serif;
     margin-top: 20px;
     display: none;
     position: absolute;
@@ -537,16 +603,6 @@ form>p {
 .bloc-icon>div>img {
     width: 20px;
     height: 20px;
-}
-
-h1 {
-    font-family: "Rajdhani";
-    font-weight: 400;
-}
-
-p {
-    font-family: "Space Grotesk";
-    font-size: 18px;
 }
 
 .nav-footer {
