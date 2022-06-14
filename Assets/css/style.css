@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-color: #000;
     color: white;
+    overflow-x: hidden;
 }
 
 
@@ -390,6 +391,19 @@ form>input {
     height: 80%;
 }
 
+.label-bd-annonce {
+    position: relative;
+}
+
+.label-bd-annonce>.play_icon {
+    position: absolute;
+    top: 38%;
+    left: 44.8%;
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+}
+
 .resposive-bd:hover {
     box-shadow: 0 0 25px #fff;
     transition: 1s;
@@ -610,4 +624,8 @@ form>p {
     margin: 0 auto;
     border-left: 3px solid rgba(255, 255, 255, 0.096);
     border-right: 3px solid rgba(255, 255, 255, 0.096);
+}
+
+.corp {
+    margin-left: -91000px;
 }
