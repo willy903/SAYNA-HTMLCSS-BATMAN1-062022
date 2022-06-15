@@ -31,7 +31,7 @@ p {
 
 button {
     font-family: "Space Grotesk", sans-serif;
-    margin: 5px;
+    margin-top: 2px;
 }
 
 .entete,
@@ -133,10 +133,10 @@ button {
     font-family: "Rajdhani", sans-serif;
     font-size: 20px;
     font-weight: 400;
-    width: 230px;
-    height: 60px;
+    width: 200px;
+    height: auto;
     margin: 12px;
-    line-height: 60px;
+    padding: 15px;
 }
 
 .entete_item>h1:hover,
@@ -167,24 +167,26 @@ button {
 }
 
 .batcinema {
-    margin: 50px;
     width: 80%;
     text-align: left;
+    margin-left: 30px;
 }
 
 .batcinema>p {
     font-size: 25px;
     text-align: justify;
+    padding-bottom: 25px;
 }
 
 .batcinema>h1 {
     font-weight: bold;
-    padding-bottom: 20px
+    padding-bottom: 15px
 }
 
 .il_st_batman {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 30px;
+    font-size: 5.5vw;
+    padding-bottom: 14px;
 }
 
 .boite-bat {
@@ -216,6 +218,8 @@ button {
 
 .boite-bat>.item-bat>.card>h3 {
     font-family: "Rajdhani", sans-serif;
+    font-size: 1.3vw;
+    padding-top: 5px;
 }
 
 .boite-bat>.item-bat>.card:hover {
@@ -417,7 +421,6 @@ form>input {
 }
 
 .btn-groupe>button {
-    margin-left: 20px;
     width: 150px;
     height: 40px;
     border-image: linear-gradient(160deg, hsl(0, 0%, 60%), hsl(198, 80%, 28%)) 1;
@@ -460,7 +463,7 @@ form>p {
 .btn-confirmer {
     background: linear-gradient(to right, hsl(40, 40%, 84%), hsl(356, 60%, 40%));
     width: 200px;
-    height: 50px;
+    padding: 20px;
     text-align: center;
     color: white;
     border: none;
@@ -561,7 +564,7 @@ form>p {
 }
 
 .citation {
-    width: 68%;
+    max-width: 80%;
     text-align: center;
     display: block;
 }
@@ -595,12 +598,12 @@ form>p {
 }
 
 .petit-presentation {
-    font-size: 12px;
+    font-size: 1.9vw;
+    line-height: 20px;
 }
 
 .petit-presentation>img {
     width: 20px;
-    height: 20px;
 }
 
 .bloc-icon {
